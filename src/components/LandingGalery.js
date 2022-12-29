@@ -25,7 +25,8 @@ function LandingGalery() {
         stopOnHover={false}
         interval='4000'
         showThumbs={true}
-        showArrows={true}
+        showArrows={window.innerWidth < 992 ? false : true}
+      
       >
         <div className='img'>
             <img src={pOne} alt='first'></img>
