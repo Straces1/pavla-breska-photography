@@ -1,0 +1,31 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+
+.head-font {
+  font-family: 'Great Vibes', cursive;
+  /* color: hsl(207, 68%, 56%); */
+  color: white;
+  font-size: 3.5em;
+}
+.subHead-font {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: -100px;
+  color: white;
+  /* color: hsl(207, 68%, 56%); */
+}
+.links-right {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+
+  
+  /* color: hsl(207, 68%, 56%); */
+}
+
+.rotate {
+  transform: rotate(90deg)
+}
