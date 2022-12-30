@@ -24,8 +24,9 @@ function LandingGalery() {
         showStatus={false}
         stopOnHover={false}
         interval='4000'
-        showThumbs={true}
+        showThumbs={window.innerWidth < 376 ? false : true}
         showArrows={window.innerWidth < 992 ? false : true}
+        thumbWidth={window.innerWidth < 668 ? 50 : 80}
       
       >
         <div className='img'>

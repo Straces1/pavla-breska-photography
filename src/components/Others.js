@@ -18,7 +18,7 @@ function Others() {
         {id: 'picture_10', getImgSrc: () => require('../images/others/p10.jpg')}
     ]
   return (
-    <FullScreenSection backgroundColor="rgb(87, 87, 87)" color='white' >
+    <FullScreenSection backgroundColor="rgb(87, 87, 87)" color='white' width='100%'>
         <Heading alignSelf='flex-start' mt={8} id='gallery'>Gallery</Heading>
         <Box w='60vw' h='auto'>
             <Carousel

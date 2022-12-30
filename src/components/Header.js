@@ -89,9 +89,7 @@ const socials = [
     }
 ];
 
-// let scrWidth = document.screen.width;
-let scrWidth = Screen.width
-console.log(scrWidth);
+
   return (
     <Box
         position='fixed'
@@ -105,7 +103,7 @@ console.log(scrWidth);
         zIndex='1'
         ref={headerRef}
     >
-        <Box>
+        
             <HStack
                 px={{base: 1, sm: 3, md: 6, lg: 6, xl: 6, xxl: 6}}
                 py={1}
@@ -128,14 +126,14 @@ console.log(scrWidth);
                     </nav>     
                 </Hide> 
                 <nav>
-                    <Box ml={{sm: '5vw', md: '20vw', lg: '4vw', xl: '17vw'}}>
+                    <Box ml={{base: '0px', sm: '5vw', md: '20vw', lg: '4vw', xl: '17vw'}}>
                         <VStack>
-                            <Box mb={-3} ml={20}>
+                            <Box mb={-3} ml={{base: 5, sm: 20, md: 20, lg: 20, xl: 20}}>
                                 <HStack fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm', xl: 'md'}}>
                                     <div className='head-font'><p>Pavla</p></div>
                                     <Image 
                                         src={Logo} 
-                                        boxSize={{base: '80px', sm: '80px', md: '80px', lg: '80px', xl: '100px'}} 
+                                        boxSize={{base: '70px', sm: '80px', md: '80px', lg: '80px', xl: '100px'}} 
                                         alt='logo'
                                     ></Image>
                                     <div className='head-font'><p>Breska</p></div>
@@ -165,7 +163,7 @@ console.log(scrWidth);
                         <Menu >
                             <MenuButton
                                 color='white'
-                                mr={10}
+                                mr={5}
                                 as={IconButton}
                                 icon={<HamburgerIcon boxSize={7}/>}
                                 variant='outline'
@@ -180,7 +178,7 @@ console.log(scrWidth);
                     </Box>
                 </Show>
             </HStack>
-        </Box>
+        
       
     </Box>
   )

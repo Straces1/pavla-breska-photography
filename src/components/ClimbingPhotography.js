@@ -52,13 +52,13 @@ function ClimbingPhotography() {
     >
       <Heading mt={4} >Climbing Photography</Heading>
       <Grid
-        gridTemplateColumns='repeat(3,minmax(0,1fr))'
+        gridTemplateColumns={{ sm: 'repeat(1,minmax(0,1fr))', md: 'repeat(2,minmax(0,1fr))', lg: 'repeat(3,minmax(0,1fr))', xl: 'repeat(3,minmax(0,1fr))'}}
         gap={8}
       >
         {climbingGalery.map((item, key) => {
           return(
-            <VStack key={key}>
-              <Image width='25vw' src={item.getImgSrc()} borderRadius='md' alt={item.title}></Image>
+            <VStack width={{base: '80vw', sm: '50vw', md: '31vw', lg: '26vw', xl: '23vw'}} key={key}>
+              <Image  src={item.getImgSrc()} borderRadius='md' alt={item.title}></Image>
               <Text pl={1} alignSelf='flex-start' >{item.title}</Text>
             </VStack>
           )
