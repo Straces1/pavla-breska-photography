@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pavla-breska-photography/static/css/main.4e45d1be.css",
-    "main.js": "/pavla-breska-photography/static/js/main.a5303fd8.js",
+    "main.js": "/pavla-breska-photography/static/js/main.0b803fd3.js",
     "static/js/787.564a9037.chunk.js": "/pavla-breska-photography/static/js/787.564a9037.chunk.js",
     "static/media/p9.jpg": "/pavla-breska-photography/static/media/p9.6dafcf5a9a0ef8d0348e.jpg",
     "static/media/papoose.jpg": "/pavla-breska-photography/static/media/papoose.273f858a913b7fedcc40.jpg",
@@ -36,11 +36,11 @@
     "static/media/logo_w.svg": "/pavla-breska-photography/static/media/logo_w.ea951126c79a15eac136add4f0e62e0a.svg",
     "index.html": "/pavla-breska-photography/index.html",
     "main.4e45d1be.css.map": "/pavla-breska-photography/static/css/main.4e45d1be.css.map",
-    "main.a5303fd8.js.map": "/pavla-breska-photography/static/js/main.a5303fd8.js.map",
+    "main.0b803fd3.js.map": "/pavla-breska-photography/static/js/main.0b803fd3.js.map",
     "787.564a9037.chunk.js.map": "/pavla-breska-photography/static/js/787.564a9037.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e45d1be.css",
-    "static/js/main.a5303fd8.js"
+    "static/js/main.0b803fd3.js"
   ]
 }
