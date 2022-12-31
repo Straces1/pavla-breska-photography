@@ -15,19 +15,26 @@ function Others() {
         {id: 'picture_7', getImgSrc: () => require('../images/others/p7.jpg')},
         {id: 'picture_8', getImgSrc: () => require('../images/others/p8.jpg')},
         {id: 'picture_9', getImgSrc: () => require('../images/others/p9.jpg')},
-        {id: 'picture_10', getImgSrc: () => require('../images/others/p10.jpg')}
+        {id: 'picture_10', getImgSrc: () => require('../images/others/p10.jpg')},
+        {id: 'picture_11', getImgSrc: () => require('../images/others/p11.jpg')}
     ]
   return (
     <FullScreenSection backgroundColor="rgb(87, 87, 87)" color='white' width='100%'>
-        <Heading alignSelf='flex-start' mt={8} id='gallery'>Gallery</Heading>
-        <Box w='60vw' h='auto'>
+        
+        <Box 
+            w={window.innerWidth < 480 ? '90vw' : '65vw'}
+            h='auto'
+        >
+            <Heading alignSelf='flex-start' mt={8} id='gallery'>Gallery</Heading>
             <Carousel
+                
                 thumbWidth='5vw'
                 infiniteLoop
                 showStatus={false}
                 showIndicators={false}
                 autoPlay
                 stopOnHover={false}
+                showThumbs={window.innerWidth < 768 ? false : true}
                 interval='6000'
             >
                 {others.map((item, key) => {

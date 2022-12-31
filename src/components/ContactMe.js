@@ -9,9 +9,9 @@ function ContactMe() {
         backgroundColor='rgb(87, 87, 87)'
     >
         <Heading mt={8} alignSelf='flex-start' id='contact-me'>Contact Me</Heading>
-        <Box>
+        <Box >
             <form>
-                <VStack spacing={3} width='40vw' color='white' >
+                <VStack spacing={3} width={window.innerWidth < 480 ? '80vw' : '40vw'} color='white' mb={8}>
                     <Input placeholder='Name...' id='name' type='text'></Input>
                     <Input placeholder='E-mail...' id='email' type='email'></Input>
                     <Textarea placeholder='Type your message...' id='email' type='text'></Textarea>

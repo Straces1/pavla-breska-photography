@@ -1,4 +1,16 @@
-import { Heading, Image, Grid, VStack, Text } from '@chakra-ui/react'
+import { 
+  Heading, 
+  Image, 
+  Grid, 
+  VStack, 
+  Text,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalCloseButton,
+  ModalBody,
+} from '@chakra-ui/react'
 import React from 'react'
 import FullScreenSection from './FullScreenSection'
 
@@ -42,7 +54,10 @@ const climbingGalery = [
 
 ]
 
-function ClimbingPhotography() {
+function ClimbingPhotography2() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [imgSrc, setImgSrc] = React.useState()
+
   return (
     <FullScreenSection
       isDarkBackground={true}
@@ -56,11 +71,32 @@ function ClimbingPhotography() {
         gap={8}
       >
         {climbingGalery.map((item, key) => {
+            const handleClick = () => {
+              setImgSrc(item.getImgSrc())
+              onOpen()
+            }
           return(
             <VStack width={{base: '80vw', sm: '50vw', md: '31vw', lg: '26vw', xl: '23vw'}} key={key}>
-              <Image  src={item.getImgSrc()} borderRadius='md' alt={item.title}></Image>
+              <Image onClick={() => handleClick()} src={item.getImgSrc()} borderRadius='md' alt={item.title}></Image>
               <Text pl={1} alignSelf='flex-start' >{item.title}</Text>
+
+              <Modal  size='xl' height='100wh' blockScrollOnMount={true} isOpen={isOpen} onClose={onClose}>
+                <ModalOverlay />
+                <ModalContent>
+                  <ModalCloseButton color='white' />
+              
+                  <ModalBody bg='black'>
+                    <Image src={imgSrc} width='100%' borderRadius='md' />
+                  </ModalBody>
+                </ModalContent>
+
+               
+
+              </Modal>
+
             </VStack>
+            
+
           )
         })}
  
@@ -69,4 +105,4 @@ function ClimbingPhotography() {
   )
 }
 
-export default ClimbingPhotography
+export default ClimbingPhotography2

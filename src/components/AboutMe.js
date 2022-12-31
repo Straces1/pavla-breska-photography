@@ -59,7 +59,7 @@ function AboutMe() {
               <AnimationOnScroll animateIn='animate__fadeInBottomLeft'>
                 <Box 
                   color='white'
-                  textAlign='justify'
+                  textAlign='left'
                   backgroundColor='rgb(37, 37, 37)' 
                   p={4}
                   style={{transform: 'translateY(-7vh)'}}

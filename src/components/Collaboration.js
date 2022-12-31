@@ -6,7 +6,7 @@ import '../App.css'
 const projects = [
   {
     title: "Vertical shop",
-    description: "Product/climbing photographer for local Canadian distributor of European outdoor brand Singing Rock.",
+    description: "Local Canadian distributor of European outdoor brand Singing Rock that offers quality climbing equipment for rope access workers, rock and ice climbers and arborists. Time to time I hang out with guys from the Vertical Shop to shoot climbing photo content.",
     getImgSrc: () => require('../images/collaboration/vertical.jpg'),
     url: "https://verticalshop.ca/"
     
@@ -14,19 +14,19 @@ const projects = [
   },
   {
     title: "Vencouver International Mountain Film Festival",
-    description: "Supporter, volunteer coordinator and member of the community. ",
+    description: "Twice a year, at the main event in February and the Fall Series in November, you can find me at the VIMFF where I've been a long time supporter and a staff member. For me, the VIMFF is a source of inspiration for mountain adventures and I love being a part of the festival. ",
     getImgSrc: () => require('../images/collaboration/vimff.jpg'),
     url: "https://vimff.org/"
   },
   {
     title: "Mountain Mornings",
-    description: "Brand ambasador. Use discount code PAVLA10 for 10% off on beautiful stickers, camping mugs, apparel and others.",
+    description: "A small local business of my fellow Czech living in Canada. Petra creates beautiful Pacific Northwest inspired illustrations. I'm honored to be Mountain Mornings brand ambassador. Use discount code PAVLA10 for 10% off on stickers, camping mugs, apparel and other spectacular items.",
     getImgSrc: () => require('../images/collaboration/mornings.jpg'),
     url: 'https://mountainmornings.ca/'
   },
   {
     title: "Mountain Mentors",
-    description: "Occasional photographer of climbing teams in summer program.",
+    description: "Mountain Mentors is a community committed to self-development and support, in the backcountry and beyond, offering mentorship programs for women in the outdoors. I occasionally photograph the teams during the summer climbing program.",
     getImgSrc: () => require('../images/collaboration/mentors.jpg'),
     url: 'http://www.mountainmentors.org/'
   }
@@ -49,7 +49,7 @@ function Collaboration() {
               <VStack 
                 bg='rgb(37, 37, 37)' 
                 width={{base: '60vw', sm: '60vw', md: '33vw', lg: '33vw', xl: '30vw'}} 
-                minHeight='32vw' 
+                minHeight='84vh' 
                 borderRadius='lg' 
                 mb={4}
               >

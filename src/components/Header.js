@@ -19,7 +19,6 @@ import { BsInstagram, BsEnvelope } from 'react-icons/bs'
 import { IconContext } from 'react-icons/lib';
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Logo from '../images/logo_w.svg'
-//import './header.css';
 import '../App.css'
 
 extendTheme({
@@ -41,6 +40,18 @@ const handleClick = (id) => {
             behavior: 'smooth',
             inline: 'nearest',
             block: 'start',
+        })
+    }
+}
+const handleMenuClick = (id) => {
+   
+    const element = document.getElementById(id);
+    
+    if (element) {
+        element.scrollIntoView({
+            //behavior: 'smooth',
+            // inline: 'nearest',
+            // block: 'start',
         })
     }
 }
@@ -90,6 +101,7 @@ const socials = [
 ];
 
 
+
   return (
     <Box
         position='fixed'
@@ -128,8 +140,12 @@ const socials = [
                 <nav>
                     <Box ml={{base: '0px', sm: '5vw', md: '20vw', lg: '4vw', xl: '17vw'}}>
                         <VStack>
-                            <Box mb={-3} ml={{base: 5, sm: 20, md: 20, lg: 20, xl: 20}}>
-                                <HStack fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm', xl: 'md'}}>
+                            {/* <Box mb={-3} ml={{base: 5, sm: 20, md: 20, lg: 20, xl: 20}}> */}
+                                <HStack 
+                                    fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm', xl: 'md'}}
+                                    mb={-3} 
+                                    ml={{base: 5, sm: 20, md: 20, lg: 20, xl: 20}}
+                                >
                                     <div className='head-font'><p>Pavla</p></div>
                                     <Image 
                                         src={Logo} 
@@ -138,8 +154,13 @@ const socials = [
                                     ></Image>
                                     <div className='head-font'><p>Breska</p></div>
                                 </HStack>
-                            </Box>
-                            <Text fontSize={{base: 'sm', sm: 'md', md: 'md', lg: 'lg', xl: 'xl'}} className="subHead-font" pl={12}>PHOTOGRAPHY</Text>
+                            {/* </Box> */}
+                            <Text 
+                                style={{transform: 'translateX(4vw)'}}
+                                fontSize={{base: 'sm', sm: 'md', md: 'md', lg: 'lg', xl: 'xl'}} 
+                                className="subHead-font" 
+                                // pl={{base: 6, sm: 12, md: '3px', lg: '3px', xl: '3px', xxl: 12}}
+                            >PHOTOGRAPHY</Text>
                         </VStack>
                     </Box>
                 </nav>
@@ -161,19 +182,26 @@ const socials = [
                 >
                     <Box>
                         <Menu >
-                            <MenuButton
-                                color='white'
-                                mr={5}
-                                as={IconButton}
-                                icon={<HamburgerIcon boxSize={7}/>}
-                                variant='outline'
-                            />
-                            <MenuList>
-                                <MenuItem>GALLERY</MenuItem>
-                                <MenuItem>COLLABORATION</MenuItem>
-                                <MenuItem>ABOUT ME</MenuItem>
-                                <MenuItem>CONTACT ME</MenuItem>
-                            </MenuList>
+                            {({ isOpen }) => (
+                                <>
+                                <MenuButton
+                                    isActive={isOpen}
+                                    color='white'
+                                    mr={5}
+                                    as={IconButton}
+                                    icon={<HamburgerIcon boxSize={7}/>}
+                                    variant='outline'
+                                    transition='all 0.2s'
+                                    _hover={{bg: 'gray.400'}}
+                                />
+                                <MenuList>
+                                    <MenuItem onClick={() => handleMenuClick('gallery')}>GALLERY</MenuItem>
+                                    <MenuItem onClick={() => handleMenuClick('collaboration')}>COLLABORATION</MenuItem>
+                                    <MenuItem onClick={() => handleMenuClick('about-me')}>ABOUT</MenuItem>
+                                    <MenuItem onClick={() => handleMenuClick('contact-me')}>CONTACT ME</MenuItem>
+                                </MenuList>
+                                </>
+                            )}
                         </Menu>
                     </Box>
                 </Show>

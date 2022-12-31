@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react"
 import AboutMe from "./components/AboutMe";
-import ClimbingPhotography from "./components/ClimbingPhotography";
+//import ClimbingPhotography from "./components/ClimbingPhotography";
+import ClimbingPhotography2 from "./components/ClimbingPhotography2";
 import LandingGalery from "./components/LandingGalery";
 import Header from "./components/Header";
 import Footer from "./components/Footer"
@@ -14,7 +15,8 @@ function App() {
       <main>
         <Header />
         <LandingGalery />
-        <ClimbingPhotography />
+        {/* <ClimbingPhotography /> */}
+        <ClimbingPhotography2 />
         <Others />
         <Collaboration />
         <AboutMe />
