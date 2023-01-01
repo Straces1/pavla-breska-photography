@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
     Box, 
     HStack, 
-    VStack, 
-    Text, 
     Button, 
     extendTheme, 
     Image, 
@@ -18,7 +16,7 @@ import {
 import { BsInstagram, BsEnvelope } from 'react-icons/bs'
 import { IconContext } from 'react-icons/lib';
 import { HamburgerIcon } from '@chakra-ui/icons'
-import Logo from '../images/logo_w.svg'
+import Logo from '../images/logo2.svg'
 import '../App.css'
 
 extendTheme({
@@ -92,7 +90,7 @@ const socials = [
     {
         icon: <BsEnvelope/>,
         
-        url: "mailto: pavluschka@gmail.com",
+        url: "mailto: pavlabphoto@gmail.com",
     },
     {
         icon: <BsInstagram/>,
@@ -137,33 +135,21 @@ const socials = [
                     </Box>
                     </nav>     
                 </Hide> 
+                 {/* This picture below has been compressed by SWGOMG - thats the way how I made it work */}
                 <nav>
-                    <Box ml={{base: '0px', sm: '5vw', md: '20vw', lg: '4vw', xl: '17vw'}}>
-                        <VStack>
-                            {/* <Box mb={-3} ml={{base: 5, sm: 20, md: 20, lg: 20, xl: 20}}> */}
-                                <HStack 
-                                    fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm', xl: 'md'}}
-                                    mb={-3} 
-                                    ml={{base: 5, sm: 20, md: 20, lg: 20, xl: 20}}
-                                >
-                                    <div className='head-font'><p>Pavla</p></div>
-                                    <Image 
-                                        src={Logo} 
-                                        boxSize={{base: '70px', sm: '80px', md: '80px', lg: '80px', xl: '100px'}} 
-                                        alt='logo'
-                                    ></Image>
-                                    <div className='head-font'><p>Breska</p></div>
-                                </HStack>
-                            {/* </Box> */}
-                            <Text 
-                                style={{transform: 'translateX(4vw)'}}
-                                fontSize={{base: 'sm', sm: 'md', md: 'md', lg: 'lg', xl: 'xl'}} 
-                                className="subHead-font" 
-                                // pl={{base: 6, sm: 12, md: '3px', lg: '3px', xl: '3px', xxl: 12}}
-                            >PHOTOGRAPHY</Text>
-                        </VStack>
-                    </Box>
-                </nav>
+                    <Box 
+                    // style={{transform: 'translateX(5vw)'}}
+                    ml={{
+                       lg: '16vw',
+                       md: '25vw', 
+                       sm: '18vw',
+                       base: '5vw'
+                    }}
+                    >
+                        <Image src={Logo} width='360px' />
+                    </Box>  
+                </nav> 
+
                 <Hide below='lg'>
                     <nav>
                     <Box px={4} mt={14}>
@@ -199,6 +185,7 @@ const socials = [
                                     <MenuItem onClick={() => handleMenuClick('collaboration')}>COLLABORATION</MenuItem>
                                     <MenuItem onClick={() => handleMenuClick('about-me')}>ABOUT</MenuItem>
                                     <MenuItem onClick={() => handleMenuClick('contact-me')}>CONTACT ME</MenuItem>
+                                    <MenuItem><Box mr='5px'><BsInstagram /></Box><a href='https://www.instagram.com/pavlabphoto/'><span>INSTAGRAM</span></a></MenuItem>
                                 </MenuList>
                                 </>
                             )}

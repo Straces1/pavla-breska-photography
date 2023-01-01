@@ -6,8 +6,9 @@ import LandingGalery from "./components/LandingGalery";
 import Header from "./components/Header";
 import Footer from "./components/Footer"
 import Collaboration from "./components/Collaboration";
-import ContactMe from "./components/ContactMe";
+// import ContactMe from "./components/ContactMe";
 import Others from "./components/Others";
+import ContactMeSection from "./components/ContactMeSection";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Others />
         <Collaboration />
         <AboutMe />
-        <ContactMe />
+        {/* <ContactMe /> */}
+        <ContactMeSection />
         <Footer />
       </main>
     </ChakraProvider>

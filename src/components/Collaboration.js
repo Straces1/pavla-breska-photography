@@ -13,7 +13,7 @@ const projects = [
 
   },
   {
-    title: "Vencouver International Mountain Film Festival",
+    title: "Vancouver International Mountain Film Festival",
     description: "Twice a year, at the main event in February and the Fall Series in November, you can find me at the VIMFF where I've been a long time supporter and a staff member. For me, the VIMFF is a source of inspiration for mountain adventures and I love being a part of the festival. ",
     getImgSrc: () => require('../images/collaboration/vimff.jpg'),
     url: "https://vimff.org/"
