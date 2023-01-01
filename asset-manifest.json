@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pavla-breska-photography/static/css/main.4e45d1be.css",
-    "main.js": "/pavla-breska-photography/static/js/main.19507b2a.js",
+    "main.js": "/pavla-breska-photography/static/js/main.77c81e5e.js",
     "static/js/787.564a9037.chunk.js": "/pavla-breska-photography/static/js/787.564a9037.chunk.js",
     "static/media/p11.jpg": "/pavla-breska-photography/static/media/p11.a09c9f8c23feeb314860.jpg",
     "static/media/papoose.jpg": "/pavla-breska-photography/static/media/papoose.273f858a913b7fedcc40.jpg",
@@ -33,15 +33,15 @@
     "static/media/mornings.jpg": "/pavla-breska-photography/static/media/mornings.3ed13ffa51f700569f30.jpg",
     "static/media/vimff.jpg": "/pavla-breska-photography/static/media/vimff.61914bafcc24d6af2ec4.jpg",
     "static/media/p3.jpg": "/pavla-breska-photography/static/media/p3.b625d9d9f546c4e81e37.jpg",
+    "static/media/logo2.svg": "/pavla-breska-photography/static/media/logo2.baae9cd7578f816941820c7466466f34.svg",
     "static/media/portrait.JPG": "/pavla-breska-photography/static/media/portrait.c33f4112f89e71fc38c6.JPG",
-    "static/media/logo_w.svg": "/pavla-breska-photography/static/media/logo_w.ea951126c79a15eac136add4f0e62e0a.svg",
     "index.html": "/pavla-breska-photography/index.html",
     "main.4e45d1be.css.map": "/pavla-breska-photography/static/css/main.4e45d1be.css.map",
-    "main.19507b2a.js.map": "/pavla-breska-photography/static/js/main.19507b2a.js.map",
+    "main.77c81e5e.js.map": "/pavla-breska-photography/static/js/main.77c81e5e.js.map",
     "787.564a9037.chunk.js.map": "/pavla-breska-photography/static/js/787.564a9037.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e45d1be.css",
-    "static/js/main.19507b2a.js"
+    "static/js/main.77c81e5e.js"
   ]
 }
